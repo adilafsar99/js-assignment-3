@@ -247,127 +247,127 @@ else {
 
 //****** Chapter 12-13 ******
 //Question 1
-//var userCharacter = prompt("Enter a single character: (Number or Letter)");
-//while (userCharacter === null || userCharacter === "" || userCharacter.length !== 1) {
-//				if (userCharacter === null || userCharacter === "") {
-//								alert("Please enter a character!")
-//								userCharacter = prompt("Enter a single character: (Number or Letter)");
-//				}
-//				if (userCharacter.length !== 1) {
-//							alert("Please enter a single character!");
-//							userCharacter = prompt("Enter a single character: (Number or Letter)");	
-//				}
-//}
-//if (userCharacter >= "0" && userCharacter <= "9") {
-//				alert("Your input is a number.")
-//}
-//else if (userCharacter >= "A" && userCharacter <= "Z") {
-//				alert("Your input is an uppercase letter.")
-//}
-//else if (userCharacter >= "a" && userCharacter <= "z") {
-//				alert("Your input is a lowercase letter.")
-//}
-//else {
-//				alert("Your input is beyond the scope of this program.")
-//}
+var userCharacter = prompt("Enter a single character: (Number or Letter)");
+while (userCharacter === null || userCharacter === "" || userCharacter.length !== 1) {
+	if (userCharacter === null || userCharacter === "") {
+		alert("Please enter a character!")
+		userCharacter = prompt("Enter a single character: (Number or Letter)");
+	}
+	if (userCharacter.length !== 1) {
+		alert("Please enter a single character!");
+		userCharacter = prompt("Enter a single character: (Number or Letter)");	
+	}
+}
+if (userCharacter >= "0" && userCharacter <= "9") {
+	alert("Your input is a number.")
+}
+else if (userCharacter >= "A" && userCharacter <= "Z") {
+	alert("Your input is an uppercase letter.")
+}
+else if (userCharacter >= "a" && userCharacter <= "z") {
+	alert("Your input is a lowercase letter.")
+}
+else {
+	alert("Your input is beyond the scope of this program.")
+}
 
 //Question 2
-//var firstNumber, secondNumber;
-//firstNumber = +prompt("Enter first number:");
-//secondNumber = +prompt("Enter second number:");
-//if (firstNumber > secondNumber) {
-//				alert(firstNumber + " is greater than " + secondNumber + ".");
-//}
-//else if (firstNumber < secondNumber) {
-//				alert(secondNumber + " is greater than " + firstNumber + ".");
-//}
-//else {
-//				alert("The numbers are equal.")
-//}
+var firstNumber, secondNumber;
+firstNumber = +prompt("Enter first number:");
+secondNumber = +prompt("Enter second number:");
+if (firstNumber > secondNumber) {
+	alert(firstNumber + " is greater than " + secondNumber + ".");
+}
+else if (firstNumber < secondNumber) {
+	alert(secondNumber + " is greater than " + firstNumber + ".");
+}
+else {
+	alert("The numbers are equal.")
+}
 
 //Question 3
-//var number;
-//number = +prompt("Enter a number:");
-//if (number > 0) {
-//			alert(number + " is positive.");
-//}
-//else if (number < 0) {
-//			alert(number + " is negative.");
-//}
-//else {
-//				alert("Your number is 0.");
-//}
+var number;
+number = +prompt("Enter a number:");
+if (number > 0) {
+	alert(number + " is positive.");
+}
+else if (number < 0) {
+	alert(number + " is negative.");
+}
+else {
+	alert("Your number is 0.");
+}
 
 //Question 4
-//var userCharacter = prompt("Enter a single letter:");
-//if (userCharacter === null || userCharacter === "") {
-//				alert("You didn't enter a value!")
-//}
-//else {
-//				while (userCharacter.length != 1) {
-//				   alert("Your input is more than a single letter!");
-//				   userCharacter = prompt("Enter a single letter:");
-//}
-//  userCharacter = userCharacter.toLowerCase()
-//  if (userCharacter === "a" || userCharacter === "e" || userCharacter === "i" || userCharacter === "o" || userCharacter === "u") {
-//				  alert("Your input is a vowel");
-//}
-//  else { 
-//    alert("Your input is not a vowel.")
-//  }
-//}
+var userCharacter = prompt("Enter a single letter:");
+if (userCharacter === null || userCharacter === "") {
+	alert("You didn't enter a value!")
+}
+else {
+	while (userCharacter.length != 1) {
+		alert("Your input is more than a single letter!");
+		userCharacter = prompt("Enter a single letter:");
+}
+  userCharacter = userCharacter.toLowerCase()
+  if (userCharacter === "a" || userCharacter === "e" || userCharacter === "i" || userCharacter === "o" || userCharacter === "u") {
+	alert("Your input is a vowel");
+}
+  else { 
+    alert("Your input is not a vowel.")
+  }
+}
 
 //Question 5
-//var correctPassword = "StRoNg PaSsWoRd";
-//var userPassword = prompt("Enter your password:");
-//while (userPassword === "" || userPassword === null) {
-//				alert("Please enter your password!");
-//				userPassword = prompt("Enter your password:");
-//}
-//if (userPassword === correctPassword) {
-//				alert("Correct! The password you entered matches the original password.")
-//}
-//else {
-//				alert("Incorrect Password! The original password is " + "'" + correctPassword + "'" + ".")
-//}
+var correctPassword = "StRoNg PaSsWoRd";
+var userPassword = prompt("Enter your password:");
+while (userPassword === "" || userPassword === null) {
+	alert("Please enter your password!");
+	userPassword = prompt("Enter your password:");
+}
+if (userPassword === correctPassword) {
+	alert("Correct! The password you entered matches the original password.")
+}
+else {
+	alert("Incorrect Password! The original password is " + "'" + correctPassword + "'" + ".")
+}
 
 //Question 6
-//var greeting;
-//var hour = +prompt("Enter the current hour:");
-//if (hour >= 0 && hour < 9) {
-//   greeting = "Good morning";
-//   alert(greeting);
-//}
-//else if (hour >=9 && hour < 18) {
-//   greeting = "Good day";
-//   alert(greeting);
-//}
-//else if (hour >=18 && hour < 24) {
-//   greeting = "Good night";
-//   alert(greeting);
-//}
-//else {
-//				alert("You input is beyond the scope of this program.");
-//}
+var greeting;
+var hour = +prompt("Enter the current hour:");
+if (hour >= 0 && hour < 9) {
+   greeting = "Good morning";
+   alert(greeting);
+}
+else if (hour >=9 && hour < 18) {
+   greeting = "Good day";
+   alert(greeting);
+}
+else if (hour >=18 && hour < 24) {
+   greeting = "Good night";
+   alert(greeting);
+}
+else {
+   alert("You input is beyond the scope of this program.");
+}
 
 //Question 7
-//var time = prompt("Enter time of the day in 24 hours format: (7PM = 1900)");
-//while (time === null || time === "") {
-//				alert("Please enter time!");
-//				time = prompt("Enter time of the day in 24 hours format: (7PM = 1900)");
-//}
-//if (time >= 0000 && time < 1200) {
-//				alert("Good morning");
-//}
-//else if (time >= 1200 && time < 1700) {
-//				alert("Good day");
-//}
-//else if (time >= 1700 && time < 2100) {
-//				alert("Good evening");
-//}
-//else if (time >= 2100 && time < 2359) {
-//				alert("Good night");
-//}
-//else {
-//				alert("Your input is beyond the scope of this program.");
-//}
+var time = prompt("Enter time of the day in 24 hours format: (7PM = 1900)");
+while (time === null || time === "") {
+	alert("Please enter time!");
+	time = prompt("Enter time of the day in 24 hours format: (7PM = 1900)");
+}
+if (time >= 0000 && time < 1200) {
+	alert("Good morning");
+}
+else if (time >= 1200 && time < 1700) {
+	alert("Good day");
+}
+else if (time >= 1700 && time < 2100) {
+	alert("Good evening");
+}
+else if (time >= 2100 && time < 2359) {
+	alert("Good night");
+}
+else {
+	alert("Your input is beyond the scope of this program.");
+}

@@ -1,11 +1,18 @@
-//****** Chapter 9-11 ******
+var chapNumber = +prompt("Enter a chapter number to see its executable tasks:\n(Chapter 9 to 11's and Chapter 12 to 13's tasks are together)");
+var taskNumber;
+if (chapNumber === 9 || chapNumber === 10 || chapNumber === 11) {
 
+//****** Chapter 9-11 ******
+taskNumber = +prompt("Enter a task number to run the task you want to check: (From 1 to 11)");
+if (taskNumber === 1) {
 //Question 1
 var cityName = prompt("Enter city name:");
 if (cityName === "Karachi") {
    alert("Welcome to city of lights.");
 }
+}
 
+else if (taskNumber === 2) {
 //Question 2
 var gender = prompt("Enter your gender:");
 while (gender === null || gender === "") {
@@ -21,7 +28,9 @@ else if (gender.toLowerCase() === "female") {
 else {
    alert("Good Morning");
 }
+}
 
+else if (taskNumber === 3) {
 //Question 3
 var signalColor = prompt("Enter the color of traffic signal:");
 while (signalColor === null || signalColor === "") {
@@ -40,7 +49,9 @@ else if (signalColor.toLowerCase() === "green") {
 else {
 		alert("This is not a color of the traffic signal light.");
 }
+}
 
+else if (taskNumber === 4) {
 //Question 4
 var remainingFuel = prompt("Enter the remaining fuel of your car in litres:");
 while (remainingFuel === null || remainingFuel === "") {
@@ -53,7 +64,11 @@ if (remainingFuel < 0.25) {
 else {
    alert("You have enough fuel.")
 }
+}
 
+else if (taskNumber === 5) {
+   alert("This task does not run, it is an answer");
+}
 //Question 5
 
 //a
@@ -110,6 +125,7 @@ else {
 //alert("car is smaller than cat");
 //}
 
+else if (taskNumber === 6) {
 //Question 6
 var totalMarks = 1, obtMarks1, obtMarks2, obtMarks3;
 var percentage, obtMarks = 2, grade, remarks;

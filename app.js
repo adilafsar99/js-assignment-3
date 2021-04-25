@@ -164,7 +164,9 @@ document.write("Obtained marks: " + obtMarks + "<br />");
 document.write("Percentage: " + percentage + "%<br />");
 document.write("Grade: " + grade + "<br />");
 document.write("Remarks: " + remarks + "<br />");
+}
 
+else if (taskNumber === 7) {
 //Question 7
 var secretNumber, guessedNumber;
 secretNumber = Math.round(Math.random() * 10);
@@ -186,7 +188,9 @@ else if (guessedNumber > secretNumber){
 else {
 	alert("Your answer is too small.");
 }
+}
 
+else if (taskNumber === 8) {
 //Question 8
 var userNumber, isDivisibleBy3 = false;
 userNumber = +prompt("Enter a number to see if its divisible by 3:");
@@ -199,7 +203,9 @@ if (isDivisibleBy3) {
 else {
 	alert("Your number is not divisible by 3.");
 }
+}
 
+else if (taskNumber === 9) {
 //Question 9
 var userNumber, isEvenNumber = false;
 userNumber = +prompt("Enter a number to see if its even or odd:");
@@ -212,7 +218,9 @@ if (isEvenNumber) {
 else {
 	alert("Your number is odd.");
 }
+}
 
+else if (taskNumber === 10) {
 //Question 10
 var temperature = +prompt("Enter today's temperature:");
 if (temperature > 40) {
@@ -230,7 +238,9 @@ else if (temperature > 10) {
 else {
 	alert("The value is outside the program's code")
 }
+}
 
+else if (taskNumber === 11) {
 //Question 11
 var firstNumber, secondNumber, operation, result;
 firstNumber = +prompt("Enter first number:");
@@ -259,9 +269,17 @@ else if (operation === 5) {
 else {
 	alert("Your input for the operation is beyond the scope of this program.")
 }
+}
 
+else {
+   alert("Invalid Input");
+}
+
+else if (chapNumber === 12 || chapNumber === 13) {
 
 //****** Chapter 12-13 ******
+taskNumber = +prompt("Enter the task number of the task you want to run: (From 1 to 7");
+if (taskNumber === 1) {
 //Question 1
 var userCharacter = prompt("Enter a single character: (Number or Letter)");
 while (userCharacter === null || userCharacter === "" || userCharacter.length !== 1) {
@@ -286,7 +304,9 @@ else if (userCharacter >= "a" && userCharacter <= "z") {
 else {
 	alert("Your input is beyond the scope of this program.")
 }
+}
 
+else if (taskNumber === 2) {
 //Question 2
 var firstNumber, secondNumber;
 firstNumber = +prompt("Enter first number:");
@@ -300,7 +320,9 @@ else if (firstNumber < secondNumber) {
 else {
 	alert("The numbers are equal.")
 }
+}
 
+else if (taskNumber === 3) {
 //Question 3
 var number;
 number = +prompt("Enter a number:");
@@ -313,7 +335,9 @@ else if (number < 0) {
 else {
 	alert("Your number is 0.");
 }
+}
 
+else if (taskNumber === 4) {
 //Question 4
 var userCharacter = prompt("Enter a single letter:");
 if (userCharacter === null || userCharacter === "") {
@@ -332,7 +356,9 @@ else {
     alert("Your input is not a vowel.")
   }
 }
+}
 
+else if (taskNumber === 5) {
 //Question 5
 var correctPassword = "StRoNg PaSsWoRd";
 var userPassword = prompt("Enter your password:");
@@ -346,7 +372,9 @@ if (userPassword === correctPassword) {
 else {
 	alert("Incorrect Password! The original password is " + "'" + correctPassword + "'" + ".")
 }
+}
 
+else if (taskNumber === 6) {
 //Question 6
 var greeting;
 var hour = +prompt("Enter the current hour:");
@@ -365,7 +393,9 @@ else if (hour >=18 && hour < 24) {
 else {
    alert("You input is beyond the scope of this program.");
 }
+}
 
+else if (taskNumber === 7) {
 //Question 7
 var time = prompt("Enter time of the day in 24 hours format: (7PM = 1900)");
 while (time === null || time === "") {
@@ -386,4 +416,13 @@ else if (time >= 2100 && time < 2359) {
 }
 else {
 	alert("Your input is beyond the scope of this program.");
+}
+}
+
+else {
+   alert("Invalid Input!");
+}
+
+else {
+   alert("Invalid Input!");
 }

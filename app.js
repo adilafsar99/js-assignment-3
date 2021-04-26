@@ -278,7 +278,7 @@ else {
 else if (chapNumber === 12 || chapNumber === 13) {
 
 //****** Chapter 12-13 ******
-taskNumber = +prompt("Enter the task number of the task you want to run: (From 1 to 7");
+taskNumber = +prompt("Enter the task number of the task you want to run: (From 1 to 7)");
 if (taskNumber === 1) {
 //Question 1
 var userCharacter = prompt("Enter a single character: (Number or Letter)");

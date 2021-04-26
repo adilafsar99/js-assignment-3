@@ -169,8 +169,7 @@ document.write("Remarks: " + remarks + "<br />");
 else if (taskNumber === 7) {
 //Question 7
 var secretNumber, guessedNumber;
-secretNumber = Math.round(Math.random() * 10);
-alert(secretNumber)
+secretNumber = 7;
 guessedNumber = +prompt("Guess the secret number: (From 1 to 10)");
 while (guessedNumber > 10 || guessedNumber < 1) {
 	alert("Your answer is out of range!");

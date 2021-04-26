@@ -274,6 +274,7 @@ else {
 else {
    alert("Invalid Input");
 }
+}
 
 else if (chapNumber === 12 || chapNumber === 13) {
 
@@ -421,6 +422,7 @@ else {
 
 else {
    alert("Invalid Input!");
+}
 }
 
 else {
